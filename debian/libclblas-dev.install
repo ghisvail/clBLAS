@@ -1,0 +1,3 @@
+usr/include/*
+usr/lib*/*.so usr/lib
+usr/share/clBLAS/*.cmake usr/lib/cmake/clBLAS
