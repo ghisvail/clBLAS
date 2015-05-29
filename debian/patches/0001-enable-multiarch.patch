@@ -1,3 +1,8 @@
+Description: enable multiarch installation paths 
+Author: Ghislain Antony Vaillant <ghisvail@gmail.com>
+Forwarded: not-needed
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
 @@ -105,7 +105,7 @@
