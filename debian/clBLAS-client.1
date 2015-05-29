@@ -21,98 +21,107 @@ Force instantiation of all OpenCL devices
 Use an image\-based kernel
 .TP
 \fB\-m\fR [ \fB\-\-sizem\fR ] arg (=128)
-number of rows in A and C
+Number of rows in A and C
 .TP
 \fB\-n\fR [ \fB\-\-sizen\fR ] arg (=128)
-number of columns in B and C
+Number of columns in B and C
 .TP
 \fB\-k\fR [ \fB\-\-sizek\fR ] arg (=128)
-number of columns in A and rows in B
+Number of columns in A and rows in B
 .TP
 \fB\-\-lda\fR arg (=0)
-first dimension of A in memory. if set to 0,
-lda will default to M (when transposeA is "no
-transpose") or K (otherwise)
+First dimension of A in memory.
+.br
+if set to 0, lda will default to M (when transposeA is "no
+transpose") 
+.br
+or K (otherwise)
 .TP
 \fB\-\-ldb\fR arg (=0)
-first dimension of B in memory. if set to 0,
-ldb will default to K (when transposeB is "no
-transpose") or N (otherwise)
+First dimension of B in memory.
+.br
+if set to 0, ldb will default to K (when transposeB is "no
+transpose") 
+.br
+or N (otherwise)
 .TP
 \fB\-\-ldc\fR arg (=0)
-first dimension of C in memory. if set to 0,
-ldc will default to M
+First dimension of C in memory.
+.br
+if set to 0, ldc will default to M
 .TP
 \fB\-\-offA\fR arg (=0)
-offset of the matrix A in memory object
+Offset of the matrix A in memory object
 .TP
 \fB\-\-offBX\fR arg (=0)
-offset of the matrix B or vector X in memory
-object
+Offset of the matrix B or vector X in memory object
 .TP
 \fB\-\-offCY\fR arg (=0)
-offset of the matrix C or vector Y in memory
-object
+Offset of the matrix C or vector Y in memory object
 .TP
 \fB\-\-alpha\fR arg (=1)
-specifies the scalar alpha
+Specifies the scalar alpha
 .TP
 \fB\-\-beta\fR arg (=1)
-specifies the scalar beta
+Specifies the scalar beta
 .TP
 \fB\-o\fR [ \fB\-\-order\fR ] arg (=0)
 0 = row major, 1 = column major
 .TP
 \fB\-\-transposeA\fR arg (=0)
-0 = no transpose, 1 = transpose, 2 = conjugate
-transpose
+0 = no transpose, 1 = transpose, 2 = conjugate transpose
 .TP
 \fB\-\-transposeB\fR arg (=0)
-0 = no transpose, 1 = transpose, 2 = conjugate
-transpose
+0 = no transpose, 1 = transpose, 2 = conjugate transpose
 .TP
 \fB\-f\fR [ \fB\-\-function\fR ] arg (=gemm)
-BLAS function to test. Options: gemm, trsm,
-trmm, gemv, symv, syrk, syr2k
+BLAS function to test.
+.br
+Options: gemm, trsm, trmm, gemv, symv, syrk, syr2k
 .TP
 \fB\-r\fR [ \fB\-\-precision\fR ] arg (=s)
 Options: s,d,c,z
 .TP
 \fB\-\-side\fR arg (=0)
-0 = left, 1 = right. only used with [list of
-function families]
+0 = left, 1 = right.
+.br
+only used with [list of function families]
 .TP
 \fB\-\-uplo\fR arg (=0)
-0 = upper, 1 = lower. only used with [list of
-function families]
+0 = upper, 1 = lower.
+.br
+only used with [list of function families]
 .TP
 \fB\-\-diag\fR arg (=0)
-0 = unit diagonal, 1 = non unit diagonal. only
-used with [list of function families]
+0 = unit diagonal, 1 = non unit diagonal.
+.br
+only used with [list of function families]
 .TP
 \fB\-p\fR [ \fB\-\-profile\fR ] arg (=20)
-Time and report the kernel speed (default:
-profiling off)
+Time and report the kernel speed (default: profiling off)
 .TP
 \fB\-\-roundtrip\fR arg (=noroundtrip) 
-including the time of OpenCL memory allocation
-and transportation; options:roundtrip,
-noroundtrip(default)
+Including the time of OpenCL memory allocation
+and transportation
+.br
+Options: roundtrip, noroundtrip(default)
 .TP
 \fB\-\-memalloc\fR arg (=default)
-setting the memory allocation flags for
-OpenCL; would not take effect if roundtrip
-time is not measured; options:default(default)
-,alloc_host_ptr,use_host_ptr,copy_host_ptr,use
-_persistent_mem_amd,rect_mem
+Setting the memory allocation flags for OpenCL
+.br
+no effect if roundtrip time is not measured
+.br
+Options: default(default), alloc_host_ptr, use_host_ptr, 
+.br
+copy_host_ptr, use_persistent_mem_amd, rect_mem
 .SH "COPYRIGHT"
 .br
 Copyright \(co 2015 Ghislain Antony Vaillant
 .br
 .PP
-This manual page was written for the Debian system (and may be used by others)\&.
+This manual page was written for the Debian system\&.
 .PP
 Permission is granted to copy, distribute and/or modify 
-this document under the terms of the BSD 2-Clause 
-license\&.
+.br
+this document under the terms of the BSD 2-Clause license\&.
 .sp
