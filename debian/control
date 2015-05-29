@@ -43,6 +43,7 @@ Package: libclblas-doc
 Section: doc
 Architecture: all
 Depends: ${misc:Depends},
+         libjs-jquery,
          libjs-mathjax
 Description: OpenCL BLAS library (documentation)
  This library provides an implementation of the Basic Linear Algebra 
