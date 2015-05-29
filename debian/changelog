@@ -1,4 +1,4 @@
-clblas (2.4.0-1) UNRELEASED; urgency=low
+clblas (2.4.0-1) unstable; urgency=low
 
   * Initial release. (Closes: #786505)
 
