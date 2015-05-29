@@ -31,12 +31,12 @@ Depends: libclblas2 (= ${binary:Version}),
          ${misc:Depends}
 Description: OpenCL BLAS library
 
-Package: libclblas-doc
-Section: doc
-Architecture: all
-Depends: ${misc:Depends},
-         libjs-mathjax
-Description: OpenCL BLAS library
+#Package: libclblas-doc
+#Section: doc
+#Architecture: all
+#Depends: ${misc:Depends},
+#         libjs-mathjax
+#Description: OpenCL BLAS library
 
 Package: libclblas2
 Section: libs
