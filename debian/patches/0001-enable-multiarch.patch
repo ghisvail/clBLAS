@@ -1,0 +1,20 @@
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -105,7 +105,7 @@
+     endif( )
+ endif()
+ 
+-set( SUFFIX_LIB ${SUFFIX_LIB_DEFAULT} CACHE STRING "String to append to 'lib' install path" )
++set( SUFFIX_LIB "/${CMAKE_LIBRARY_ARCHITECTURE}" CACHE STRING "String to append to 'lib' install path" )
+ set( SUFFIX_BIN ${SUFFIX_BIN_DEFAULT} CACHE STRING "String to append to 'bin' install path" )
+ 
+ if( MSVC_IDE )
+@@ -297,7 +297,7 @@
+ if(WIN32)
+   set(destdir CMake)
+ else()
+-  set(destdir share/clBLAS)
++  set(destdir lib/${CMAKE_LIBRARY_ARCHITECTURE}/cmake/clBLAS)
+ endif()
+ string(REGEX REPLACE "[^/]+" ".." reldir "${destdir}")
+ configure_file(
