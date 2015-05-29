@@ -1,0 +1,9 @@
+Document: libclblas-doc
+Title: clBLAS Documentation
+Author: clBLAS Developers
+Abstract: This is the reference documentation for the clBLAS library.
+Section: Programming
+
+Format: HTML
+Index: /usr/share/doc/libclblas-doc/html/index.html
+Files: /usr/share/doc/libclblas-doc/html/*.html
