@@ -39,17 +39,17 @@ Description: OpenCL BLAS library (development files)
  .
  This package provides the clBLAS development files.
 
-#Package: libclblas-doc
-#Section: doc
-#Architecture: all
-#Depends: ${misc:Depends},
-#         libjs-mathjax
-#Description: OpenCL BLAS library (documentation)
-# This library provides an implementation of the Basic Linear Algebra 
-# Subprograms levels 1, 2 and 3, using OpenCL and optimized for AMD GPU 
-# hardware.
-# .
-# This package provides the clBLAS documentation.
+Package: libclblas-doc
+Section: doc
+Architecture: all
+Depends: ${misc:Depends},
+         libjs-mathjax
+Description: OpenCL BLAS library (documentation)
+ This library provides an implementation of the Basic Linear Algebra 
+ Subprograms levels 1, 2 and 3, using OpenCL and optimized for AMD GPU 
+ hardware.
+ .
+ This package provides the clBLAS documentation.
 
 Package: libclblas2
 Section: libs
