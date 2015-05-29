@@ -20,21 +20,36 @@ Architecture: any
 Depends: libclblas2 (= ${binary:Version}),
          ${misc:Depends},
          ${shlibs:Depends}
-Description: OpenCL BLAS library
+Description: OpenCL BLAS library (executables)
+ This library provides an implementation of the Basic Linear Algebra 
+ Subprograms levels 1, 2 and 3, using OpenCL and optimized for AMD GPU 
+ hardware.
+ .
+ This package provides the clBLAS executables.
 
 Package: libclblas-dev
 Section: libdevel
 Architecture: any
 Depends: libclblas2 (= ${binary:Version}),
          ${misc:Depends}
-Description: OpenCL BLAS library
+Description: OpenCL BLAS library (development files)
+ This library provides an implementation of the Basic Linear Algebra 
+ Subprograms levels 1, 2 and 3, using OpenCL and optimized for AMD GPU 
+ hardware.
+ .
+ This package provides the clBLAS development files.
 
 #Package: libclblas-doc
 #Section: doc
 #Architecture: all
 #Depends: ${misc:Depends},
 #         libjs-mathjax
-#Description: OpenCL BLAS library
+#Description: OpenCL BLAS library (documentation)
+# This library provides an implementation of the Basic Linear Algebra 
+# Subprograms levels 1, 2 and 3, using OpenCL and optimized for AMD GPU 
+# hardware.
+# .
+# This package provides the clBLAS documentation.
 
 Package: libclblas2
 Section: libs
@@ -43,7 +58,12 @@ Multi-Arch: same
 Depends: ${misc:Depends},
          ${shlibs:Depends} 
 Pre-Depends: ${misc:Pre-Depends}
-Description: OpenCL BLAS library
+Description: OpenCL BLAS library (shared library)
+ This library provides an implementation of the Basic Linear Algebra 
+ Subprograms levels 1, 2 and 3, using OpenCL and optimized for AMD GPU 
+ hardware.
+ .
+ This package provides the clBLAS shared library.
 
 Package: libclblas2-dbg
 Section: debug
@@ -53,4 +73,9 @@ Multi-Arch: same
 Depends: libclblas2 (= ${binary:Version}),
          ${shlibs:Depends},
          ${misc:Depends}
-Description: OpenCL BLAS library
+Description: OpenCL BLAS library (debugging symbols)
+ This library provides an implementation of the Basic Linear Algebra 
+ Subprograms levels 1, 2 and 3, using OpenCL and optimized for AMD GPU 
+ hardware.
+ .
+ This package provides the clBLAS debugging symbols.
