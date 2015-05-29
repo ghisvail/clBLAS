@@ -26,7 +26,6 @@ Description: OpenCL BLAS library
 Package: libclblas-dev
 Section: libdevel
 Architecture: any
-Multi-Arch: same
 Depends: libclblas2 (= ${binary:Version}),
          ${misc:Depends}
 Description: OpenCL BLAS library
