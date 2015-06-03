@@ -25,3 +25,8 @@ override_dh_auto_configure:
 		-DBUILD_SHARED_LIBS=ON
 	echo "I: Generating Doxygen documentation"
 	cd doc/ && doxygen clBLAS.doxy && rm html/jquery.js
+
+override_dh_auto_clean:
+	dh_auto_clean
+	[ ! -f doc/doxygen_sqlite3.db ] || $(RM) doc/doxygen_sqlite3.db
+	[ ! -d doc/html ] || $(RM) -rf doc/html
