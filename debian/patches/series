@@ -1,3 +1,3 @@
 fix-doxygen-settings.patch
 debian-enable-multiarch.patch
-disable-multilib-compile-flags.patch
+disable-multilib-cflags.patch
