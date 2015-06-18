@@ -1,3 +1,8 @@
+Description: disable multilib flags
+Author: Ghislain Antony Vaillant <ghisvail@gmail.com>
+Forwarded: not-needed
+---
+This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- clblas.orig/src/CMakeLists.txt
 +++ clblas/src/CMakeLists.txt
 @@ -225,9 +225,9 @@
