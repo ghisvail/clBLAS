@@ -1,0 +1,15 @@
+--- clblas.orig/src/CMakeLists.txt
++++ clblas/src/CMakeLists.txt
+@@ -225,9 +225,9 @@
+     # Don't use -rpath.
+     set(CMAKE_SKIP_RPATH ON CACHE BOOL "Skip RPATH" FORCE)
+ 
+-    set(CMAKE_C_FLAGS "-m${TARGET_PLATFORM} ${CMAKE_C_FLAGS}")
+-    set(CMAKE_CXX_FLAGS "-m${TARGET_PLATFORM} ${CMAKE_CXX_FLAGS}")
+-    set(CMAKE_Fortran_FLAGS "-m${TARGET_PLATFORM} ${CMAKE_Fortran_FLAGS}")
++    #set(CMAKE_C_FLAGS "-m${TARGET_PLATFORM} ${CMAKE_C_FLAGS}")
++    #set(CMAKE_CXX_FLAGS "-m${TARGET_PLATFORM} ${CMAKE_CXX_FLAGS}")
++    #set(CMAKE_Fortran_FLAGS "-m${TARGET_PLATFORM} ${CMAKE_Fortran_FLAGS}")
+ 
+     if(TARGET_PLATFORM EQUAL 32)
+         set(CMAKE_C_FLAGS "${CMAKE_C_FLAGS} -fno-builtin")
