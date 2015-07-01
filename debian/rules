@@ -19,6 +19,9 @@ override_dh_auto_configure:
 		-DBUILD_CLIENT=ON \
 		-DBUILD_KTEST=OFF \
 		-DBUILD_SHARED_LIBS=ON
+
+override_dh_auto_build:
+	dh_auto_build
 	echo "I: Generating Doxygen documentation"
 	cd doc/ && doxygen clBLAS.doxy && rm html/jquery.js
 
