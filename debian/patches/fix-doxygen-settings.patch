@@ -14,6 +14,15 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
  
  # If the CREATE_SUBDIRS tag is set to YES, then doxygen will create 
  # 4096 sub-directories (in 2 levels) under the output directory of each output 
+@@ -974,7 +974,7 @@
+ # page will contain the date and time when the page was generated. Setting 
+ # this to NO can help when comparing the output of multiple runs.
+ 
+-HTML_TIMESTAMP         = YES
++HTML_TIMESTAMP         = NO
+ 
+ # If the HTML_DYNAMIC_SECTIONS tag is set to YES then the generated HTML 
+ # documentation will contain sections that can be hidden and shown after the 
 @@ -1223,7 +1223,7 @@
  # installing MathJax.  However, it is strongly recommended to install a local 
  # copy of MathJax from http://www.mathjax.org before deployment.
