@@ -28,5 +28,5 @@ override_dh_auto_configure:
 
 override_dh_auto_clean:
 	dh_auto_clean
-	[ ! -f doc/doxygen_sqlite3.db ] || $(RM) doc/doxygen_sqlite3.db
-	[ ! -d doc/html ] || $(RM) -rf doc/html
+	$(RM) -f doc/doxygen_sqlite3.db
+	$(RM) -rf doc/html
