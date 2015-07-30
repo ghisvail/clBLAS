@@ -1,6 +1,7 @@
 clblas (2.6-1) UNRELEASED; urgency=medium
 
-  * 
+  * New upstream release.
+  * d/patches: add patch fixing missing linkage with pthread. 
 
  -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 30 Jul 2015 17:29:37 +0100
 
