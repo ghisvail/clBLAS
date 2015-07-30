@@ -7,7 +7,7 @@ Build-Depends: cmake,
                debhelper (>= 9),
                doxygen,
                libboost-program-options-dev,
-               ocl-icd-opencl-dev
+               ocl-icd-opencl-dev | opencl-dev
 Standards-Version: 3.9.6
 Homepage: https://github.com/clMathLibraries/clBLAS
 Vcs-Git: git://anonscm.debian.org/debian-science/packages/clblas.git
