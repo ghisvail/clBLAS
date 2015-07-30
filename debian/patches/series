@@ -1,3 +1,4 @@
 fix-doxygen-settings.patch
 debian-enable-multiarch.patch
 disable-multilib-cflags.patch
+fix-missing-pthread-linkage.patch
