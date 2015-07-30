@@ -1,3 +1,9 @@
+clblas (2.6-1) UNRELEASED; urgency=medium
+
+  * 
+
+ -- Ghislain Antony Vaillant <ghisvail@gmail.com>  Thu, 30 Jul 2015 17:29:37 +0100
+
 clblas (2.4-3) unstable; urgency=medium
 
   * Add gbp.conf file.
