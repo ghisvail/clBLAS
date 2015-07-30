@@ -3,9 +3,9 @@ Author: Ghislain Antony Vaillant <ghisvail@gmail.com>
 Forwarded: not-needed
 ---
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
---- clblas.orig/src/CMakeLists.txt
-+++ clblas/src/CMakeLists.txt
-@@ -225,9 +225,9 @@
+--- a/src/CMakeLists.txt
++++ b/src/CMakeLists.txt
+@@ -293,9 +293,9 @@
      # Don't use -rpath.
      set(CMAKE_SKIP_RPATH ON CACHE BOOL "Skip RPATH" FORCE)
  

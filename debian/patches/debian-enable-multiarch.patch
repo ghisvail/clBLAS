@@ -5,7 +5,7 @@ Forwarded: not-needed
 This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
 --- a/src/CMakeLists.txt
 +++ b/src/CMakeLists.txt
-@@ -105,7 +105,7 @@
+@@ -159,7 +159,7 @@
      endif( )
  endif()
  
@@ -14,11 +14,11 @@ This patch header follows DEP-3: http://dep.debian.net/deps/dep3/
  set( SUFFIX_BIN ${SUFFIX_BIN_DEFAULT} CACHE STRING "String to append to 'bin' install path" )
  
  if( MSVC_IDE )
-@@ -297,7 +297,7 @@
+@@ -366,7 +366,7 @@
  if(WIN32)
    set(destdir CMake)
  else()
--  set(destdir share/clBLAS)
+-  set(destdir lib${SUFFIX_LIB}/cmake/clBLAS)
 +  set(destdir lib/${CMAKE_LIBRARY_ARCHITECTURE}/cmake/clBLAS)
  endif()
  string(REGEX REPLACE "[^/]+" ".." reldir "${destdir}")
